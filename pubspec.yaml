@@ -1,0 +1,46 @@
+# Configuración del proyecto Flutter Donut Shop
+# Este archivo define las dependencias, recursos y configuración del proyecto
+
+# Nombre del proyecto (debe coincidir con el nombre de la carpeta)
+name: demo
+
+# Descripción breve del proyecto
+description: "Donut Shop - Aplicación móvil para tienda de donuts, cafés y más"
+
+# Configuración de publicación (none = no se publicará en pub.dev)
+publish_to: 'none' 
+
+# Versión de la aplicación (formato: version+build)
+version: 1.0.0+1
+
+# Configuración del entorno de desarrollo
+environment:
+  sdk: ^3.9.2  # Versión mínima del SDK de Dart/Flutter
+
+# Dependencias principales del proyecto
+dependencies:
+  flutter:
+    sdk: flutter  # SDK de Flutter
+  
+  # Iconos de iOS para mantener consistencia visual
+  cupertino_icons: ^1.0.8
+  
+  # Provider para manejo de estado global
+  provider: ^6.0.5
+
+# Dependencias de desarrollo (solo para desarrollo y testing)
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Framework de testing de Flutter
+  
+  # Linter para mantener código limpio y consistente
+  flutter_lints: ^5.0.0
+
+# Configuración específica de Flutter
+flutter:
+  # Habilita Material Design para la interfaz
+  uses-material-design: true
+
+  # Recursos estáticos de la aplicación
+  assets:
+    - assets/images/  # Carpeta con todas las imágenes de productos
